@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Stand-up</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script type="module" src="src/standup.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Daily Stand-up</h1>
+        <form id="standup-form">
+            <label>Date:</label>
+            <input type="date" name="date" required>
+
+            <label>What did I accomplish yesterday?</label>
+            <textarea name="yesterday" required></textarea>
+
+            <label>What will I do today?</label>
+            <textarea name="today"></textarea>
+
+            <label>Are there any blockers?</label>
+            <textarea name="blockers"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>This website is created for educational purposes only. <br> 
+            &copy; 2025 Tina Tan | All rights reserved.</p>
+    </footer>
+</body>
+</html>

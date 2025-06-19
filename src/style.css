@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* TYPOGRAHY */
+h2 {
+    color: #1e90ff;
+}
+
+#nav-links {
+    display: flex;
+    gap: 5rem;
+    list-style-type: none;
+    padding: 0;
+
+    & a {
+        color: inherit;
+    }
+
+    & a:hover {
+        color: #1e90ff;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+    }
+
+    & p {
+        font-weight: 900;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+        margin: 0;
+    }
+}
+
+/* HOMEPAGE WEEK */
+#weeks-of-term {
+    list-style: none;
+
+    & a {
+        color: inherit;
+    }
+
+    & a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+    }
+
+    li {
+        margin: 2rem;
+        font-size: 20px;
+    }
+}
+
+/* FORMS */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+form textarea, form input[type="date"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.75rem;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* STANDUP ENTRY */
+.standup-entry {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f2f7ff;
+}
+
+/* RETRO ENTRY */
+.retro-entry {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f2f7ff;
+}
+
+/* WEEK OVERVIEW */
+.week-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+  
+#standup-section, #retro-section {
+    flex: 1;
+    min-width: 0;
+}
+  
+#standup-section {
+    border-right: 1px solid #ccc;
+    padding-right: 1rem;
+}
+  
+#retro-section {
+    padding-left: 1rem;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 5rem;
+}
