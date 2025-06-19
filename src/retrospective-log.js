@@ -6,7 +6,7 @@ async function loadRetrospectives() {
     const { data, error } = await supabase
         .from('weekly_retrospective')
         .select('*')
-        // .order('week', { ascending: false })
+        .order('week_number', { ascending: true })
 
     if (error) {
         console.error('Error loading retrospectives:', error)
